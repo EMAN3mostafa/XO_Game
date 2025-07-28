@@ -40,12 +40,14 @@ class GameBoardingScreen extends StatelessWidget {
                         Flexible(
                           child: XoContainerWidget(
                             imagePath: 'assets/images/x.png',
+                            player: 'x',
                           ),
                         ),
                         const SizedBox(width: 20),
                         Flexible(
                           child: XoContainerWidget(
                             imagePath: 'assets/images/o.png',
+                            player: 'o',
                           ),
                         ),
                       ],
