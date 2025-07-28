@@ -8,14 +8,14 @@ class XoContainerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material( 
-      color: Colors.transparent, 
-      borderRadius: BorderRadius.circular(32), 
+    return Material( // ده اللي بيخلي الـ InkWell يشتغل
+      color: Colors.transparent, // عشان ميغيرش شكل الكونتينر
+      borderRadius: BorderRadius.circular(32), // نفس البوردر بتاع الكونتينر
       child: InkWell(
         onTap: () {
           print('Container tapped!');
         },
-        borderRadius: BorderRadius.circular(32), 
+        borderRadius: BorderRadius.circular(32), // لازم نكرر البوردر هنا كمان
         child: Container(
           width: double.infinity,
           height: 200,
